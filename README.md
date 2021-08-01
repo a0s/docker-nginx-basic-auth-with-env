@@ -1,4 +1,4 @@
-Now it's able to set `NGINX_PORT` and `NGINX_HOST` addition:
+Now it's able to set `NGINX_PORT` and `NGINX_HOST`:
 
 ```shell
 docker run --rm \  
