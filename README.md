@@ -1,14 +1,19 @@
-Now it's able to set `NGINX_PORT` and `NGINX_HOST`:
+Can use `NGINX_PORT` and `NGINX_HOST`:
 
 ```shell
-docker run --rm \  
-  -p 8080:7070 \
+> docker run --rm \  
+  -p 7070:7070 \
   -e NGINX_PORT=7070 \
   -e NGINX_HOST=localhost \
   -e FORWARD_PORT=8888 \
   -e FORWARD_HOST=nginx  \
   -e HTPASSWD='username:$apr1$0SUNY6DM$/DAoI2uFeZlbwwr9IVC0t0' \
-  a00s/docker-nginx-basic-auth-with-env:1.21.1-alpine
+  a00s/docker-nginx-basic-auth-with-env:1.21.1-alpine-1
+  
+> curl localhost:7070/health
+OK
+> curl localhost:7070
+~~~ basic auth to nginx:8888
 ```
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/beevelop/docker-nginx-basic-auth/Docker%20Image?style=for-the-badge)
