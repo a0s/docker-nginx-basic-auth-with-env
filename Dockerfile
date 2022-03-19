@@ -5,7 +5,8 @@ ENV \
     FORWARD_PORT=80 \
     FORWARD_HOST=web \
     NGINX_PORT=80 \
-    NGINX_HOST=localhost
+    NGINX_HOST=localhost \
+    PROXY_MAX_TEMP_FILE_SIZE=0
 
 WORKDIR /opt
 
