@@ -1,4 +1,6 @@
-Can use `NGINX_PORT` and `NGINX_HOST`:
+[Docker Hub image](https://hub.docker.com/repository/docker/a00s/docker-nginx-basic-auth-with-env)
+
+Added variables `NGINX_PORT` and `NGINX_HOST`:
 
 ```shell
 > docker run --rm \  
