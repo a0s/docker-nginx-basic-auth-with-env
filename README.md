@@ -10,7 +10,7 @@ Added variables `NGINX_PORT` and `NGINX_HOST`:
   -e FORWARD_PORT=8888 \
   -e FORWARD_HOST=nginx  \
   -e HTPASSWD='username:$apr1$0SUNY6DM$/DAoI2uFeZlbwwr9IVC0t0' \
-  a00s/docker-nginx-basic-auth-with-env:1.21.1-alpine-1
+  a00s/docker-nginx-basic-auth-with-env:1.21.1-alpine-5
   
 > curl localhost:7070/health
 OK
